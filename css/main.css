@@ -174,49 +174,6 @@ nav a:hover {
 
 
 /* ==========================================================================
-   Buttons
-   ========================================================================== */
-
-
-.button-action {
-  margin: 0;
-  padding:0;
-}
-
-  .button {
-    appearance: none;
-    background-color:#882052;
-    cursor:pointer;
-    color:#ffffff;
-    font-size: 18px;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Raleway', Arial, sans-serif;
-    display: block;
-    text-decoration:none;
-    padding:18px 36px;
-    margin: 40px auto;
-
-
-   }
-
-  .button-action a:visited {
-    color: #ffffff;
-   }
-
-  .button-action a:hover {
-    background-color:#54002F;
-   }
-
-  .button-action a:active {
-    position:relative;
-    top:1px;
-   }
-
-
-
-/* ==========================================================================
    Hero
    ========================================================================== */
 
@@ -252,7 +209,7 @@ nav a:hover {
 
 #down-arrow {
   display: block;
-  margin: 90px auto 0px auto;
+  margin: 100px auto 0px auto;
 }
 
 /* ==========================================================================
@@ -289,6 +246,83 @@ nav a:hover {
      display: block;
      margin: 18px auto;
    }
+
+
+   /* ==========================================================================
+      Buttons
+      ========================================================================== */
+
+
+   .button-action {
+     margin: 0;
+     padding:0;
+   }
+
+     .button {
+       appearance: none;
+       background-color:#882052;
+       cursor:pointer;
+       color:#ffffff;
+       font-size: 18px;
+       font-weight: 800;
+       text-transform: uppercase;
+       text-align: center;
+       font-family: 'Raleway', Arial, sans-serif;
+       text-decoration:none;
+       display: inline-block;
+       padding:18px 36px;
+       margin: 40px auto;
+   }
+
+     .button-action a:visited {
+       color: #ffffff;
+      }
+
+     .button-action a:hover {
+       background-color: #54002F;
+      }
+
+      #button-center {
+        justify-content: center;
+      }
+
+
+/* ==========================================================================
+   Projects
+   ========================================================================== */
+
+   .title h2 {
+     margin: 60px auto;
+     text-align: center;
+     color: #882052
+   }
+
+   .project-light {
+     background-color: #FAF6F8;
+     padding: 60px 60px;
+     display inline-flex;
+     flex-direction: row;
+     height: 100%;
+
+   }
+
+   .project-dark {
+     background-color: #F5EDF1;
+     padding: 60px 60px;
+     display inline-flex;
+     flex-direction: row;
+     height: 100%;
+
+   }
+
+   .column-50 {
+     width: 50%
+   }
+
+   .column-30 {
+     width: 30%
+   }
+
 
 
 /* ==========================================================================
