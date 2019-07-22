@@ -32,8 +32,8 @@
           <nav>
             <ul>
               <li><a class="nav-active" href="work.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a class="nav-inactive" href="about.html">About</a></li>
+              <li><a class="nav-inactive" href="contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -226,7 +226,8 @@
 
 </main>
 
-        <footer>
+    <footer>
+      <div class="container">
           <h5>GET IN TOUCH</h5>
           <img src="images/icon-graydash.svg" alt="Gray Dash">
 
@@ -248,57 +249,66 @@
           </ul>
 
           <h6>&copy; 2019 Taira Perrault</h6>
-        </footer>
+
+        </div>
+    </footer>
 
 
-        <!-- Contact modal-->
+    <!-- Contact modal-->
     <div class="modal-wrapper hidden">
 
-      <div class="modal">
+        <div class="modal">
 
         <!-- Modal header-->
-        <div class="modal-header">
-          <div class="container">
-            <a href="/"><img src="images/icon-logo.svg" alt="Taira Perrault"></a>
-              <button type="button-close" class="close" data-dismiss="modal">&times;</button>
+        <div class="container">
+          <div class="modal-header">
+            <div class="container">
+              <a href="/"><img src="images/icon-logo.svg" alt="Taira Perrault"></a>
+                <button type="button-close" class="close" data-dismiss="modal">&times;</button>
+            </div>
           </div>
         </div>
 
 
         <!-- Modal body-->
-        <div class="modal-body">
-          <h4>CONTACT</h4>
-            <a href="mailto:hello@tairaperrault.com" class="contact-email">
-                <span>hello@tairaperrault.com</span>
-            </a>
+        <div class="container">
+          <div class="modal-body">
+            <h4>CONTACT</h4>
+              <a href="mailto:hello@tairaperrault.com" class="contact-email">
+                  <span>hello@tairaperrault.com</span>
+              </a>
+          </div>
         </div>
 
 
         <!-- Modal footer-->
-        <div class="modal-footer">
-          <h5>GET IN TOUCH</h5>
-          <img src="images/icon-graydash.svg" alt="Gray Dash">
+          <div class="container">
+              <div class="modal-footer">
+                <h5>GET IN TOUCH</h5>
+                <img src="images/icon-graydash.svg" alt="Gray Dash">
 
-            <ul class="social-icons">
-            <!-- Email -->
-              <li>
-                  <a href="mailto:hello@tairaperrault.com"><img src="images/icon-email.svg" alt="Email"></a>
-              </li>
+                  <ul class="social-icons">
+                  <!-- Email -->
+                    <li>
+                        <a href="mailto:hello@tairaperrault.com"><img src="images/icon-email.svg" alt="Email"></a>
+                    </li>
 
-            <!-- Twitter -->
-              <li>
-                  <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-              </li>
+                  <!-- Twitter -->
+                    <li>
+                        <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                    </li>
 
-            <!-- Linkedin-->
-              <li>
-                  <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
-              </li>
-          </ul>
+                  <!-- Linkedin-->
+                    <li>
+                        <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+                    </li>
+                </ul>
 
-          <h6>&copy; 2019 Taira Perrault</h6>
+                <h6>&copy; 2019 Taira Perrault</h6>
+              </div>
+          </div>
+
         </div>
-      </div>
     </div>
 
         <!-- Jquery follwed by your custom javascript. Uncomment jQuery only if needed! -->

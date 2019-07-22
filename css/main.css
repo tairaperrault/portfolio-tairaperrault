@@ -7,10 +7,6 @@
   margin: 0 auto;
   float: none
   display: flex;
-  align-items: center;
-  align-content: space-between;
-  flex-wrap: wrap;
-  flex-shrink: 1;
 }
 
 @media (min-width: 600px) {
@@ -72,7 +68,7 @@ footer {
 
    footer ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   footer ul li {
@@ -149,7 +145,7 @@ p {
   font-weight: 400;
   font-family: 'Raleway', Arial, sans-serif;
   color: #4B4B4B;
-  line-height: 135%;
+  line-height: 160%;
 }
 
 nav ul {
@@ -160,7 +156,12 @@ nav ul {
   color: #4B4B4B;
 }
 
-nav a:visited {
+.nav-active {
+  font-weight: 800;
+  color: #882052;
+}
+
+.nav-inactive {
   color: #4B4B4B;
 }
 
@@ -172,10 +173,6 @@ nav a:hover {
   color: #882052;
 }
 
-.nav-active {
-  font-weight: 800;
-  color: #882052;
-}
 
 /* ==========================================================================
    Hero
@@ -301,7 +298,7 @@ nav a:hover {
 
 
 /* ==========================================================================
-   Projects
+   Index Page Projects
    ========================================================================== */
 
    .title h2 {
@@ -310,11 +307,15 @@ nav a:hover {
      color: #882052
    }
 
+   .project-light h3, .project-dark h3 {
+     margin: 18px auto;
+     color: #882052
+   }
+
    .project-light {
      background-color: #FAF6F8;
      padding: 60px 60px;
-     display inline-flex;
-     flex-direction: row;
+     flex-direction: column;
      height: 100%;
 
    }
@@ -330,12 +331,74 @@ nav a:hover {
 
    .column-50 {
      width: 50%
+     float: left
    }
 
    .column-30 {
      width: 30%
+     float: left
    }
 
+   .project-dark {
+     clear: both;
+   }
+
+
+/* ==========================================================================
+   Work Squares
+   ========================================================================== */
+
+
+/* ==========================================================================
+   About and Projects
+   ========================================================================== */
+
+   .side-header {
+     inline: block;
+     margin: 0px;
+     font-size: 24px;
+     font-weight: 700;
+     text-transform: uppercase;
+     text-align: right;
+     font-family: 'Raleway', Arial, sans-serif;
+     color: #4B4B4B;
+   }
+
+   .side-header ul li {
+     display: block;
+   }
+
+   .side-header-plum h3{
+     inline: block;
+     margin: 0px;
+     font-size: 24px;
+     font-weight: 700;
+     text-transform: uppercase;
+     text-align: right;
+     font-family: 'Raleway', Arial, sans-serif;
+     color: #882052;
+   }
+
+   .information-text h2 {
+     color: #882052;
+   }
+
+   .information-text ul {
+     margin: 0px;
+     font-size: 18px;
+     font-weight: 400;
+     font-family: 'Raleway', Arial, sans-serif;
+     color: #4B4B4B;
+     line-height: 160%;
+   }
+
+   .information-text ul li {
+     display: block;
+   }
+
+   .information-text p {
+     margin: 20px, 0px, 20px, 0px;
+   }
 
 
 /* ==========================================================================

@@ -31,9 +31,9 @@
 
           <nav>
             <ul>
-              <li><a href="work.html">Work</a></li>
+              <li><a class="nav-inactive" href="work.html">Work</a></li>
               <li><a class="nav-active" href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a class="nav-inactive" href="contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -96,12 +96,12 @@
         <section class="information" id="bio">
           <div class="container">
 
-            <div class="side-header plum">
+            <div class="side-header-plum">
 
                 <h3>BIO</h3>
             </div>
 
-            <div class="information text">
+            <div class="information-text">
               <p>As a designer, I couldn’t have been luckier than to have been a child during the 90’s animation renaissance; an era of exploration and imagination. When shows and movies took risks in developing living art. From the backgrounds in Aladdin, to the stylings of Batman, or the transformations in Sailor Moon, I wanted nothing more than to create something just as amazing.</p>
 
               <p>I was inspired and I couldn’t get a hold of art supplies fast enough to keep up with every new project I just had to make.This endless need to create leading me to continuously volunteer throughout my years in grade school. I began making shirt designs for my youth group evolving into requests for, event signs for community service and, my favorite, playbills for my school and community drama productions. Prior to Adobe, I either created everything by hand or used programs like Microsoft Paint or Publisher to produce my designs.</p>
@@ -121,12 +121,12 @@
         <section class="information" id="experience">
           <div class="container">
 
-            <div class="side-header plum">
+            <div class="side-header-plum">
 
                 <h3>EXPERIENCE</h3>
             </div>
 
-            <div class="information text">
+            <div class="information-text">
 
                 <ul>
                     <li><b>Art Director, Born Collective</b></li>
@@ -156,7 +156,7 @@
         <section class="information" id="resume">
           <div class="container">
 
-            <div class="side-header plum">
+            <div class="side-header-plum">
 
                 <h3>RESUME</h3>
             </div>
@@ -173,79 +173,89 @@
 
 
         <footer>
-          <h5>GET IN TOUCH</h5>
-          <img src="images/icon-graydash.svg" alt="Gray Dash">
+          <div class="container">
+              <h5>GET IN TOUCH</h5>
+              <img src="images/icon-graydash.svg" alt="Gray Dash">
 
-            <ul class="social-icons">
-            <!-- Email -->
-              <li>
-                  <a href="mailto:hello@tairaperrault.com"><img src="images/icon-email.svg" alt="Email"></a>
-              </li>
+                <ul class="social-icons">
+                <!-- Email -->
+                  <li>
+                      <a href="mailto:hello@tairaperrault.com"><img src="images/icon-email.svg" alt="Email"></a>
+                  </li>
 
-            <!-- Twitter -->
-              <li>
-                  <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-              </li>
+                <!-- Twitter -->
+                  <li>
+                      <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                  </li>
 
-            <!-- Linkedin-->
-              <li>
-                  <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
-              </li>
-          </ul>
+                <!-- Linkedin-->
+                  <li>
+                      <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+                  </li>
+              </ul>
 
-          <h6>&copy; 2019 Taira Perrault</h6>
+              <h6>&copy; 2019 Taira Perrault</h6>
+
+            </div>
         </footer>
 
 
         <!-- Contact modal-->
-    <div class="modal-wrapper hidden">
+        <div class="modal-wrapper hidden">
 
-      <div class="modal">
+            <div class="modal">
 
-        <!-- Modal header-->
-        <div class="modal-header">
-          <div class="container">
-            <a href="/"><img src="images/icon-logo.svg" alt="Taira Perrault"></a>
-              <button type="button-close" class="close" data-dismiss="modal">&times;</button>
-          </div>
+            <!-- Modal header-->
+            <div class="container">
+              <div class="modal-header">
+                <div class="container">
+                  <a href="/"><img src="images/icon-logo.svg" alt="Taira Perrault"></a>
+                    <button type="button-close" class="close" data-dismiss="modal">&times;</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Modal body-->
+            <div class="container">
+              <div class="modal-body">
+                <h4>CONTACT</h4>
+                  <a href="mailto:hello@tairaperrault.com" class="contact-email">
+                      <span>hello@tairaperrault.com</span>
+                  </a>
+              </div>
+            </div>
+
+
+            <!-- Modal footer-->
+              <div class="container">
+                  <div class="modal-footer">
+                    <h5>GET IN TOUCH</h5>
+                    <img src="images/icon-graydash.svg" alt="Gray Dash">
+
+                      <ul class="social-icons">
+                      <!-- Email -->
+                        <li>
+                            <a href="mailto:hello@tairaperrault.com"><img src="images/icon-email.svg" alt="Email"></a>
+                        </li>
+
+                      <!-- Twitter -->
+                        <li>
+                            <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                        </li>
+
+                      <!-- Linkedin-->
+                        <li>
+                            <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+                        </li>
+                    </ul>
+
+                    <h6>&copy; 2019 Taira Perrault</h6>
+                  </div>
+              </div>
+
+            </div>
         </div>
-
-
-        <!-- Modal body-->
-        <div class="modal-body">
-          <h4>CONTACT</h4>
-            <a href="mailto:hello@tairaperrault.com" class="contact-email">
-                <span>hello@tairaperrault.com</span>
-            </a>
-        </div>
-
-
-        <!-- Modal footer-->
-        <div class="modal-footer">
-          <h5>GET IN TOUCH</h5>
-          <img src="images/icon-graydash.svg" alt="Gray Dash">
-
-            <ul class="social-icons">
-            <!-- Email -->
-              <li>
-                  <a href="mailto:hello@tairaperrault.com"><img src="images/icon-email.svg" alt="Email"></a>
-              </li>
-
-            <!-- Twitter -->
-              <li>
-                  <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-              </li>
-
-            <!-- Linkedin-->
-              <li>
-                  <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
-              </li>
-          </ul>
-
-          <h6>&copy; 2019 Taira Perrault</h6>
-        </div>
-      </div>
-    </div>
 
         <!-- Jquery follwed by your custom javascript. Uncomment jQuery only if needed! -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
