@@ -210,7 +210,7 @@ nav a:hover {
 
 #down-arrow {
   display: block;
-  margin: 100px auto 0px auto;
+  margin: 150px auto 0px auto;
 }
 
 /* ==========================================================================
@@ -331,12 +331,12 @@ nav a:hover {
 
    .column-50 {
      width: 50%
-     float: left
+     float: left;
    }
 
    .column-30 {
      width: 30%
-     float: left
+     float: left;
    }
 
    .project-dark {
@@ -347,7 +347,14 @@ nav a:hover {
 /* ==========================================================================
    Work Squares
    ========================================================================== */
+   .work-square {
+    object-fit: cover;
+  }
 
+
+   #forecast {
+     background: url('../images/work-forecast.png')no-repeat center center fixed;
+   }
 
 /* ==========================================================================
    About and Projects
@@ -358,10 +365,10 @@ nav a:hover {
      margin: 0px;
      font-size: 24px;
      font-weight: 700;
-     text-transform: uppercase;
      text-align: right;
      font-family: 'Raleway', Arial, sans-serif;
      color: #4B4B4B;
+     line-height: 200%;
    }
 
    .side-header ul li {
@@ -380,11 +387,12 @@ nav a:hover {
    }
 
    .information-text h2 {
+     margin-bottom: 40px;
      color: #882052;
    }
 
    .information-text ul {
-     margin: 0px;
+     margin-bottom: 30px;
      font-size: 18px;
      font-weight: 400;
      font-family: 'Raleway', Arial, sans-serif;
@@ -397,7 +405,7 @@ nav a:hover {
    }
 
    .information-text p {
-     margin: 20px, 0px, 20px, 0px;
+     margin-bottom: 40px;
    }
 
 
