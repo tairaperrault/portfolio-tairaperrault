@@ -172,6 +172,10 @@ nav a:hover {
   color: #882052;
 }
 
+.nav-active {
+  font-weight: 800;
+  color: #882052;
+}
 
 /* ==========================================================================
    Hero
@@ -252,6 +256,11 @@ nav a:hover {
       Buttons
       ========================================================================== */
 
+    .button-center-one, .button-center-two {
+      margin: 0;
+      padding:0;
+      text-align: center;
+      }
 
    .button-action {
      margin: 0;
@@ -274,16 +283,20 @@ nav a:hover {
        margin: 40px auto;
    }
 
+   .button-center-one a:hover {
+     color: #54002F;
+     }
+
+   .button-center-two a:hover {
+       background-color: #54002F;
+      }
+
      .button-action a:visited {
        color: #ffffff;
       }
 
      .button-action a:hover {
        background-color: #54002F;
-      }
-
-      #button-center {
-        justify-content: center;
       }
 
 
