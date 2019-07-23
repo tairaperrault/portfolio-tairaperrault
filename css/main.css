@@ -192,12 +192,12 @@ nav a:hover {
   content: '';
   display: block;
   position: absolute;
-  width: 100%;
+  width: 100%
   height: 250px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/home-hero.png');
+  background: url('../images/hero-index.png');
   background-size: cover;
 }
 
@@ -208,14 +208,60 @@ nav a:hover {
   }
 }
 
+
+#hero-work h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../images/hero-work.png');
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  #hero-work h1::after {
+    width: 50%;
+    height: 500px;
+  }
+}
+
+
+#hero-about h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../images/hero-about.png');
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  #hero-about h1::after {
+    width: 50%;
+    height: 500px;
+  }
+}
+
 #down-arrow {
   display: block;
-  margin: 150px auto 0px auto;
+  margin: 100px auto 0px auto;
 }
 
 /* ==========================================================================
    Plum Divider
    ========================================================================== */
+
+   .plum-divider::before {
+     background: url('../images/image-plumdivider.png')no-repeat;
+   }
 
    .plum-divider {
      background-color: #882052;
@@ -315,7 +361,6 @@ nav a:hover {
    .project-light {
      background-color: #FAF6F8;
      padding: 60px 60px;
-     flex-direction: column;
      height: 100%;
 
    }
@@ -323,20 +368,18 @@ nav a:hover {
    .project-dark {
      background-color: #F5EDF1;
      padding: 60px 60px;
-     display inline-flex;
-     flex-direction: row;
      height: 100%;
 
    }
 
    .column-50 {
      width: 50%
-     float: left;
+     display: inline-block;
    }
 
    .column-30 {
      width: 30%
-     float: left;
+     display: inline-block;
    }
 
    .project-dark {
@@ -348,13 +391,58 @@ nav a:hover {
    Work Squares
    ========================================================================== */
    .work-square {
-    object-fit: cover;
+     max-width: 100%;
+     height: 399px;
+     display: inline-flex;
+     justify-content: center;
+     flex-wrap: wrap;
   }
 
 
    #forecast {
-     background: url('../images/work-forecast.png')no-repeat center center fixed;
+     background: url('../images/work-forecast.png')no-repeat;
    }
+
+   #horizon-rewards {
+     background: url('../images/work-horizonrewards.png')no-repeat;
+   }
+
+   #vote-u {
+     background: url('../images/work-voteneedsu.png')no-repeat;
+   }
+
+   #talking-door {
+     background: url('../images/work-talkingdoor.png')no-repeat;
+   }
+
+   #boo-boo-buddy {
+     background: url('../images/work-booboobuddies.png')no-repeat;
+   }
+
+   #busy-bus {
+     background: url('../images/work-busybus.png')no-repeat;
+   }
+
+   #partners-branding {
+     background: url('../images/work-partnersbranding.png')no-repeat;
+   }
+
+   #minnie-meals {
+     background: url('../images/work-minniemeals.png')no-repeat;
+   }
+
+   #junk-drawer {
+     background: url('../images/work-junkdrawer.png')no-repeat;
+   }
+
+   #logos {
+     background: url('../images/work-logos.png')no-repeat;
+   }
+
+   #photography {
+     background: url('../images/work-photos.png')no-repeat;
+   }
+
 
 /* ==========================================================================
    About and Projects
@@ -408,14 +496,22 @@ nav a:hover {
      margin-bottom: 40px;
    }
 
+   #about-me {
+     content: '';
+     display: inline-block;
+     width: 100%
+     height: 413px;
+     background: url('../images/about-me.png');
+     background-size: cover;
+   }
 
 /* ==========================================================================
    Helper classes (optional)
    ========================================================================== */
 
-img {
-  max-width: 100%;
-}
+   img {
+     max-width: 100%;
+   }
 
 .hidden {
     display: none !important;
