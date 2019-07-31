@@ -75,12 +75,16 @@ footer {
 
    footer ul {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
   }
 
   footer ul li {
-  display: block;
+    display: block;
+    margin: 0px 30px 0px 30px;
   }
+
 
 /* ==========================================================================
    Typography
@@ -213,6 +217,7 @@ nav a:hover {
   #hero-index h1::after {
     width: 50%;
     height: 500px;
+
   }
 }
 
@@ -221,12 +226,12 @@ nav a:hover {
   content: '';
   display: block;
   position: absolute;
-  width: 100%;
-  height: 250px;
-  top: 50%;
+  max-width: 100%;
+  max-height: 125%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: url('../images/hero-work.png');
+  transform: translate(-43%, -50%);
+  background: url('../images/hero-work.png') no-repeat;
   background-size: cover;
 }
 
@@ -243,10 +248,10 @@ nav a:hover {
   display: block;
   position: absolute;
   max-width: 100%;
-  min-height: 100%;
-  top: 50%;
+  max-height: 125%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-43%, -50%);
   background: url('../images/hero-about.png') no-repeat;
   background-size: cover;
 }
@@ -396,6 +401,12 @@ nav a:hover {
       min-height: 1px;
     }
 
+
+    .column-20 {
+      width: 20%;
+    }
+  }
+
     .column-50 {
       width: 50%;
       padding: 0px 30px;
@@ -408,14 +419,16 @@ nav a:hover {
     }
   }
 
-   .project-dark {
-     clear: both;
-   }
 
 
 /* ==========================================================================
    Work Squares
    ========================================================================== */
+
+   .work-squares {
+     margin-top: 100px;
+     }
+
    .work-square {
      min-width: 33.3%;
      height: 399px;
@@ -423,21 +436,31 @@ nav a:hover {
      flex-wrap: wrap;
      align-items: center;
      justify-content: center;
-     margin-top: 75px;
+     margin-top: 100px;
   }
 
   .hover {
-    min-width: 33.3%;
+    width: 399px;
     height: 399px;
     text-align: center;
     opacity: 0;
     transition: 0.5s opacity ease;
-    background-color: #882052;
+    background-color: rgb(84,0,47, 0.9);
   }
 
  .hover h3 {
-   margin: 100px 40px 20px 40px;
+   margin: 0px 40px 20px 40px;
+   padding-top: 100px;
    color: #ffffff;
+ }
+
+ #no-p h3 {
+   padding-top: 200px;
+ }
+
+ #work-square-button {
+   padding-top: 0px;
+   font-size: 18px;
  }
 
  .hover p {
@@ -445,26 +468,9 @@ nav a:hover {
    color: #ffffff;
  }
 
-
   .hover:hover {
     opacity: 1;
   }
-
-  .work-square-button {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-  .work-square-button {
-    background-color: none;
-  }
-
-  .work-square-button a:hover {
-    color: #54002F;
-    }
 
 
    #forecast {
@@ -527,6 +533,10 @@ nav a:hover {
      line-height: 200%;
    }
 
+   .side-header ul {
+     padding: 0px;
+   }
+
    .side-header ul li {
      display: block;
    }
@@ -542,6 +552,10 @@ nav a:hover {
      color: #882052;
    }
 
+   .information-text {
+     padding: 0px;
+   }
+
    .information-text h2 {
      margin-bottom: 40px;
      color: #882052;
@@ -554,6 +568,7 @@ nav a:hover {
      font-family: 'Raleway', Arial, sans-serif;
      color: #4B4B4B;
      line-height: 160%;
+     padding: 0px;
    }
 
    .information-text ul li {
@@ -564,14 +579,93 @@ nav a:hover {
      margin-bottom: 40px;
    }
 
-   #about-me {
-     content: '';
-     display: inline-block;
-     width: 100%
-     height: 413px;
-     background: url('../images/about-me.png');
-     background-size: cover;
+   #button-padding {
+     padding: 0px;
    }
+
+#button-resume, #top-element {
+  margin: 0px;
+}
+
+#about-me, #bio, #experience, #resume {
+  margin-top: 100px;
+}
+
+
+
+
+/* ==========================================================================
+   Forecast
+   ========================================================================== */
+
+
+   .image-information {
+     max-width: 720px;
+     height: 720px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     margin: 0px;
+     padding: 0px;
+     background-size: cover;
+  }
+
+
+  .full-width {
+    max-width: 100%;
+    background-size: cover;
+ }
+
+
+   #hero-forecast {
+     background: url('../images/hero-forecast.png') no-repeat;
+   }
+
+   #forecast-problem {
+     background: url('../images/forecast-problem.png')no-repeat;
+   }
+
+   #forecast-solution {
+     background: url('../images/forecast-solution.png')no-repeat;
+   }
+
+   #forecast-surveys {
+     background: url('../images/forecast-surveys.png')no-repeat;
+   }
+
+   #forecast-flows {
+     background: url('../images/forecast-flows.png')no-repeat;
+   }
+
+   #forecast-sketches {
+     background: url('../images/forecast-sketches.png')no-repeat;
+   }
+
+   #forecast-mockups {
+     background: url('../images/forecast-mockups.png')no-repeat;
+   }
+
+   #forecast-mockuptesting {
+     background: url('../images/forecast-mockuptesting.png')no-repeat;
+   }
+
+   #forecast-branding {
+     background: url('../images/forecast-branding.png')no-repeat;
+   }
+
+   #forecast-prototypes {
+     background: url('../images/forecast-prototypes.png')no-repeat;
+   }
+
+   #forecast-prototypetesting {
+     background: url('../images/forecast-prototypetesting.png')no-repeat;
+   }
+
+   #hero-forecast2 {
+     background: url('../images/hero-forecast2.png')no-repeat;
+   }
+
 
 /* ==========================================================================
    Helper classes (optional)
