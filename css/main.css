@@ -1,10 +1,11 @@
 /* ==========================================================================
    General
    ========================================================================== */
-
+body{
+height: 100%;
+}
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 0% 10% 0% 10%;
 }
 
 .container-flex {
@@ -29,7 +30,7 @@
 
 
 header {
-  padding: 50px 0;
+  padding: 4% 0% 2% 0%;
 }
 
 header .container {
@@ -55,7 +56,7 @@ nav ul {
 
 nav ul li {
   display: block;
-  margin-left: 30px;
+  margin-left: 10%;
 }
 
 
@@ -86,7 +87,7 @@ footer {
   }
 
   footer h5 {
-    margin-bottom: 8px;
+    margin-bottom: 1%;
     color: #882052;
  }
 
@@ -196,7 +197,7 @@ nav a:hover {
    ========================================================================== */
 
 .hero {
-  margin: 300px, 0px, 0px, 0px;
+  margin: 30% 0% 0% 0%;
   min-height: calc(100vh - 164px);
 }
 
@@ -206,81 +207,63 @@ nav a:hover {
   color: #882052;
 }
 
-#hero-index h1::after {
-  content: '';
-  display: block;
-  position: absolute;
-  max-width: 100%;
-  max-height: 125%;
-  top: 60%;
-  left: 50%;
-  transform: translate(-30%, -50%);
-  background: url('../images/hero-index.png') no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 600px) {
-  #hero-index h1::after {
-    width: 50%;
-    height: 500px;
-
+  .hero {
+    background: url('../images/image-plumdivider.svg')no-repeat center center;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    margin: 0%;
   }
-}
 
 
-#hero-work h1::after {
-  content: '';
-  display: block;
-  position: absolute;
-  max-width: 100%;
-  max-height: 125%;
-  top: 60%;
-  left: 50%;
-  transform: translate(-43%, -50%);
-  background: url('../images/hero-work.png') no-repeat;
-  background-size: cover;
-}
+   .hero-image {
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      margin: auto;
+    }
 
-@media (min-width: 600px) {
-  #hero-work h1::after {
-    width: 50%;
-    height: 500px;
-  }
-}
+    #hero-index {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      top: 29%;
+      left: 33%;
+    }
+
+    @media (min-width: 600px) {
+      #hero-index h1::after {
+        width: 50%;
+        height: 50%;
+      }
+    }
 
 
-#hero-about h1::after {
-  content: '';
-  display: block;
-  position: absolute;
-  max-width: 100%;
-  max-height: 125%;
-  top: 60%;
-  left: 50%;
-  transform: translate(-43%, -50%);
-  background: url('../images/hero-about.png') no-repeat;
-  background-size: cover;
-}
+    #hero-work {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      top: 34%;
+      left: 34%;
+    }
 
-@media (min-width: 600px) {
-  #hero-about h1::after {
-    width: 50%;
-    height: 500px;
-  }
-}
+    #hero-about {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      top: 34%;
+      left: 35%;
+    }
 
-#down-arrow {
-  display: block;
-  margin: 100px auto 0px auto;
-}
 
-.hero {
-  background: url('../images/image-plumdivider.svg')no-repeat center center;
-  overflow: hidden;
-  background-size: cover;
-  width: 100%;
-}
+    #hero-h1 {
+      margin: 2% 0% 15% 0%;
+    }
 
+    #down-arrow {
+      display: flex;
+      margin: 0px auto 10% auto;
+    }
 
 /* ==========================================================================
    Plum Divider
@@ -288,7 +271,7 @@ nav a:hover {
 
    .plum-divider {
      background-color: #882052;
-     padding: 60px 0px 20px 0px;
+     padding: 60px 0px 40px 0px;
    }
 
    #plum-divider-work {
@@ -296,25 +279,27 @@ nav a:hover {
    }
 
    #plum-divider-about {
-     padding: 60px 0px 60px 0px;
+     padding: 60 0px 60px 0px;
    }
 
    .plum-divider .container {
-     max-width: 700px;
+     max-width: 55%;
+     margin: 0% auto 0% auto;
    }
 
    .plum-divider h4, .plum-divider h5, .plum-divider p {
      color: #ffffff;
      text-align: center;
+     margin: auto;
    }
 
    .plum-divider h4 {
-     margin: 14px auto;
+     margin: 2% auto;
    }
 
    #white-dash {
      display: block;
-     margin: 18px auto;
+     margin: 2% auto;
    }
 
 
@@ -432,7 +417,7 @@ nav a:hover {
    ========================================================================== */
 
    .work-squares {
-     margin-top: 100px;
+     margin-top: 10%;
      }
 
    .work-square {
@@ -442,11 +427,11 @@ nav a:hover {
      flex-wrap: wrap;
      align-items: center;
      justify-content: center;
-     margin-top: 100px;
+     margin-top: 10%;
   }
 
   .hover {
-    width: 399px;
+    min-width: 33.3%;
     height: 399px;
     text-align: center;
     opacity: 0;
@@ -455,22 +440,22 @@ nav a:hover {
   }
 
  .hover h3 {
-   margin: 0px 40px 20px 40px;
-   padding-top: 100px;
+   margin: 0% 12% 5% 12%;
+   padding-top: 27%;
    color: #ffffff;
  }
 
  #no-p h3 {
-   padding-top: 200px;
+   padding-top: 30%;
  }
 
  #work-square-button {
-   padding-top: 0px;
+   padding-top: 0%;
    font-size: 18px;
  }
 
  .hover p {
-   margin: 0px 40px 30px 40px;
+   margin: 0% 12% 5% 12%;
    color: #ffffff;
  }
 
@@ -478,6 +463,11 @@ nav a:hover {
     opacity: 1;
   }
 
+    @media (max-width: 600px) {
+      .hover {
+        pointer-events: none;
+      }
+    }
 
    #forecast {
      background: url('../images/work-forecast.png')no-repeat;
@@ -563,12 +553,12 @@ nav a:hover {
    }
 
    .information-text h2 {
-     margin-bottom: 40px;
+     margin-bottom: 4%;
      color: #882052;
    }
 
    .information-text ul {
-     margin-bottom: 30px;
+     margin-bottom: 3%;
      font-size: 18px;
      font-weight: 400;
      font-family: 'Raleway', Arial, sans-serif;
@@ -582,8 +572,10 @@ nav a:hover {
    }
 
    .information-text p {
-     margin-bottom: 40px;
+     margin-bottom: 4%;
    }
+
+
 
    #button-padding {
      padding: 0px;
@@ -594,7 +586,7 @@ nav a:hover {
 }
 
 #about-me, #bio, #experience, #resume {
-  margin-top: 100px;
+  margin-top: 10%;
 }
 
 
@@ -623,7 +615,7 @@ nav a:hover {
    }
 
    .button-action.margin-none a {
-     margin: 0px 0px 0px 0px;
+     margin: 3% 0% 0% 0%;
    }
 
    .column-50.information-text.process p {
@@ -631,11 +623,11 @@ nav a:hover {
    }
 
    #top-margin-60 {
-     margin-top: 60px;
+     margin-top: 5%;
    }
 
    #top-margin-100, #forecast-personas, #forecast-profiles, #hero-forecast2, #forecast-conclusion {
-     margin-top: 100px;
+     margin-top: 10%;
    }
 
    #forecast-profiles {
@@ -648,75 +640,37 @@ nav a:hover {
      padding-bottom: 30px;
    }
 
-   .image-information {
-     width: 100%;
+   .half-width {
+     max-width: 100%;
      height: auto;
      display: flex;
-     flex-wrap: wrap;
-     background-size: cover;
-  }
 
-    .full-width {
-      width: 200%;
-      height: 607px;
-      align-items: center;
-      justify-content: center;
-      margin: 0px;
-      padding: 0px;
-      background-size: cover;
    }
 
+   .half-width-padding {
+     padding: 4%;
+   }
 
+   .column-50.image-information {
+     padding: 0px;
+   }
 
-   #hero-forecast {
+   .full-width {
      max-width: 100%;
-     height: 5px;
-     background: url('../images/hero-forecast.png') no-repeat;
+     height: auto;
+     display: flex;
    }
 
-   #forecast-problem {
-     background: url('../images/forecast-problem.png')no-repeat;
-   }
 
-   #forecast-solution {
-     background: url('../images/forecast-solution.png')no-repeat;
-   }
+/* ==========================================================================
+   Horizon Rewards
+   ========================================================================== */
 
-   #forecast-surveys {
-     background: url('../images/forecast-surveys.png')no-repeat;
-   }
+.image-smaller {
+  padding: 0% 5% 0% 5%;
+}
 
-   #forecast-flows {
-     background: url('../images/forecast-flows.png')no-repeat;
-   }
 
-   #forecast-sketches {
-     background: url('../images/forecast-sketches.png')no-repeat;
-   }
-
-   #forecast-mockups {
-     background: url('../images/forecast-mockups.png')no-repeat;
-   }
-
-   #forecast-mockuptesting {
-     background: url('../images/forecast-mockuptesting.png')no-repeat;
-   }
-
-   #forecast-branding {
-     background: url('../images/forecast-branding.png')no-repeat;
-   }
-
-   #forecast-prototypes {
-     background: url('../images/forecast-prototypes.png')no-repeat;
-   }
-
-   #forecast-prototypetesting {
-     background: url('../images/forecast-prototypetesting.png')no-repeat;
-   }
-
-   #hero-forecast2 {
-     background: url('../images/hero-forecast2.png')no-repeat;
-   }
 
 
 /* ==========================================================================
