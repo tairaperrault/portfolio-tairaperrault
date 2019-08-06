@@ -667,6 +667,10 @@ nav a:hover {
    Horizon Rewards
    ========================================================================== */
 
+   #top-margin-50 {
+     margin-top: 5%;
+   }
+
 .image-smaller {
   margin: 0% auto 0% auto;
   padding: 0% 20 0% 20%
@@ -674,6 +678,9 @@ nav a:hover {
   justify-content: center;
 }
 
+.image-logos {
+  max-width: 40%;
+}
 
 
 /* ==========================================================================
