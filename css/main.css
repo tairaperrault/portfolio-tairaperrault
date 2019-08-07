@@ -13,6 +13,11 @@ height: 100%;
   flex-wrap: wrap-reverse;
 }
 
+.container-noflex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (min-width: 600px) {
   .container-flex {
     flex-wrap: nowrap;
@@ -89,6 +94,14 @@ footer {
   footer h5 {
     margin-bottom: 1%;
     color: #882052;
+ }
+
+
+ #up-arrow {
+   width: 30px;
+   height: 30px;
+   display: flex;
+   margin: 10% auto 5% auto;
  }
 
 
@@ -227,7 +240,7 @@ nav a:hover {
       position: absolute;
       max-width: 100%;
       height: auto;
-      top: 29%;
+      top: 15%;
       left: 33%;
     }
 
@@ -243,16 +256,16 @@ nav a:hover {
       position: absolute;
       max-width: 100%;
       height: auto;
-      top: 34%;
-      left: 34%;
+      top: 20%;
+      left: 37%;
     }
 
     #hero-about {
       position: absolute;
       max-width: 100%;
       height: auto;
-      top: 34%;
-      left: 35%;
+      top: 20%;
+      left: 34%;
     }
 
 
@@ -387,28 +400,31 @@ nav a:hover {
    }
 
    @media (min-width: 600px) {
-    .column-10 {
-      width: 10%;
-      min-height: 1px;
-    }
 
+     .column-10 {
+       width: 10%;
+       min-height: 1px;
+     }
 
-    .column-20 {
-      width: 20%;
-    }
+     .column-20 {
+       width: 20%;
+     }
+
+     .column-50 {
+       width: 50%;
+       padding: 0px 30px;
+
+     }
+
+     .column-30 {
+       width: 30%;
+       padding: 40px 30px;
+     }
+
   }
 
-    .column-50 {
-      width: 50%;
-      padding: 0px 30px;
 
-    }
 
-    .column-30 {
-      width: 30%;
-      padding: 40px 30px;
-    }
-  }
 
 
 
@@ -417,21 +433,23 @@ nav a:hover {
    ========================================================================== */
 
    .work-squares {
-     margin-top: 10%;
-     }
+     margin: 0% auto 0% auto;
+   }
 
    .work-square {
-     min-width: 33.3%;
+     width: 399px;
      height: 399px;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
      justify-content: center;
-     margin-top: 10%;
+     margin: 10% auto 0% auto;
+     background-repeat: no-repeat;
+     background-size: cover;
   }
 
   .hover {
-    min-width: 33.3%;
+    width: 399px;
     height: 399px;
     text-align: center;
     opacity: 0;
@@ -470,47 +488,47 @@ nav a:hover {
     }
 
    #forecast {
-     background: url('../images/work-forecast.png')no-repeat;
+     background-image: url('../images/work-forecast.png');
    }
 
    #horizon-rewards {
-     background: url('../images/work-horizonrewards.png')no-repeat;
+     background-image: url('../images/work-horizonrewards.png');
    }
 
    #vote-u {
-     background: url('../images/work-voteneedsu.png')no-repeat;
+     background-image: url('../images/work-voteneedsu.png');
    }
 
    #talking-door {
-     background: url('../images/work-talkingdoor.png')no-repeat;
+     background-image: url('../images/work-talkingdoor.png');
    }
 
    #boo-boo-buddy {
-     background: url('../images/work-booboobuddies.png')no-repeat;
+     background-image: url('../images/work-booboobuddies.png');
    }
 
    #busy-bus {
-     background: url('../images/work-busybus.png')no-repeat;
+     background-image: url('../images/work-busybus.png');
    }
 
    #partners-branding {
-     background: url('../images/work-partnersbranding.png')no-repeat;
+     background-image: url('../images/work-partnersbranding.png');
    }
 
    #minnie-meals {
-     background: url('../images/work-minniemeals.png')no-repeat;
+     background-image: url('../images/work-minniemeals.png');
    }
 
    #junk-drawer {
-     background: url('../images/work-junkdrawer.png')no-repeat;
+     background-image: url('../images/work-junkdrawer.png');
    }
 
    #logos {
-     background: url('../images/work-logos.png')no-repeat;
+     background-image: url('../images/work-logos.png');
    }
 
    #photography {
-     background: url('../images/work-photos.png')no-repeat;
+     background-image: url('../images/work-photos.png');
    }
 
 
@@ -576,13 +594,12 @@ nav a:hover {
    }
 
 
-
    #button-padding {
      padding: 0px;
    }
 
    #button-resume, #top-element {
-     margin: 0px;
+     margin: 0%;
    }
 
    #about-me, #bio, #experience, #resume {
@@ -610,7 +627,7 @@ nav a:hover {
      max-width: none;
    }
 
-   #top-margin-none {
+   .top-margin-none {
      margin-top: 0px;
    }
 
@@ -622,11 +639,11 @@ nav a:hover {
      margin-bottom: 0px;
    }
 
-   #top-margin-60 {
+   .top-margin-60 {
      margin-top: 5%;
    }
 
-   #top-margin-100, #forecast-personas, #forecast-profiles, #hero-forecast2, #forecast-conclusion {
+   .top-margin-100, #forecast-personas, #forecast-profiles, #hero-forecast2, #forecast-conclusion {
      margin-top: 10%;
    }
 
@@ -641,9 +658,12 @@ nav a:hover {
    }
 
    .half-width {
-     max-width: 100%;
+     margin: 0% auto 0% auto;
+     width: 100%;
      height: auto;
      display: flex;
+     background-repeat: no-repeat;
+     background-size: cover;
 
    }
 
@@ -657,9 +677,27 @@ nav a:hover {
 
    .full-width {
      margin: 0% auto 0% auto;
-     max-width: 100%;
-     height: auto;
+     min-width: 100%;
+     min-height: 500px;
      display: flex;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+
+   #forecast-surveys {
+     background-image: url('../images/forecast-surveys.png');
+   }
+
+   #forecast-flows {
+     background-image: url('../images/forecast-flows.png');
+   }
+
+   #forecast-sketches {
+     background-image: url('../images/forecast-sketches.png');
+   }
+
+   #forecast-branding {
+     background-image: url('../images/forecast-branding.png');
    }
 
 
@@ -667,19 +705,26 @@ nav a:hover {
    Horizon Rewards
    ========================================================================== */
 
-   #top-margin-50 {
+   .top-margin-50 {
      margin-top: 5%;
    }
 
 .image-smaller {
   margin: 0% auto 0% auto;
-  padding: 0% 20 0% 20%
+  padding: 0% 3% 0% 30%
   align-items: center;
   justify-content: center;
 }
 
 .image-logos {
   max-width: 40%;
+}
+
+.full-image {
+  margin: 0% auto 0% auto;
+  max-width: 100%;
+  height: auto;
+  display: flex;
 }
 
 
