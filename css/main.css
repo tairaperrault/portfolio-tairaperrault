@@ -2,31 +2,36 @@
    General
    ========================================================================== */
    body{
-   height: 100%;
-   }
-   .container {
-     margin: 0% 10% 0% 10%;
-   }
+ height: 100%;
+ }
 
+ .container {
+   margin: 0% 10% 0% 10%;
+ }
+
+ .container-flex {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .container-reverse {
+   display: flex;
+    flex-wrap: wrap-reverse;
+ }
+
+ @media (min-width: 600px) {
    .container-flex {
-     display: flex;
-     flex-wrap: wrap-reverse;
+     flex-wrap: nowrap;
    }
+ }
 
-   .container-reverse {
-     display: flex;
-   }
+ .row-reverse .container-flex {
+   flex-direction: row-reverse;
+ }
 
-   @media (min-width: 600px) {
-     .container-flex {
-       flex-wrap: nowrap;
-     }
-   }
-
-   .row-reverse .container-flex {
-     flex-direction: row-reverse;
-   }
-
+ *, *::before, *::after {
+   box-sizing: border-box;
+ }
 
 
 /* ==========================================================================
@@ -70,7 +75,7 @@ nav ul li {
 
 
  @media (max-width: 600px) {
-   #button-open {
+   nav {
      display: none;
    }
  }
@@ -409,6 +414,10 @@ nav a:hover {
 
    }
 
+   .column-10, .column-20, .column-30, .column-50 {
+     width: 100%;
+  }
+
    @media (min-width: 600px) {
 
      .column-10 {
@@ -420,19 +429,32 @@ nav a:hover {
        width: 20%;
      }
 
-     .column-50 {
-       width: 50%;
-       padding: 0% 3%;
-
-     }
-
      .column-30 {
        width: 30%;
        padding: 40px 30px;
      }
 
+     .column-50 {
+       width: 50%;
+       padding: 0% 3%;
+       background-repeat: no-repeat;
+       background-size: cover;
+
+     }
+
   }
 
+
+     @media (max-width: 600px) {
+
+       .column-50.imge-information {
+         height: 600px;
+         background-repeat: no-repeat;
+         background-size: cover;
+
+       }
+
+    }
 
 
 
@@ -447,7 +469,7 @@ nav a:hover {
    }
 
    .work-square {
-     width: 399px;
+     width: 33.33%;
      height: 399px;
      display: flex;
      margin-top: 10%;
@@ -456,7 +478,7 @@ nav a:hover {
   }
 
   .hover {
-    width: 399px;
+    width: 100%;
     height: 399px;
     text-align: center;
     opacity: 0;
@@ -664,16 +686,6 @@ nav a:hover {
      padding-bottom: 30px;
    }
 
-   .half-width {
-     margin: 0% auto 0% auto;
-     width: 100%;
-     height: auto;
-     display: flex;
-     background-repeat: no-repeat;
-     background-size: cover;
-
-   }
-
    .half-width-padding {
      padding: 4%;
    }
@@ -689,6 +701,15 @@ nav a:hover {
      display: flex;
      background-repeat: no-repeat;
      background-size: cover;
+   }
+
+
+   #forecast-problem {
+     background-image: url('../images/forecast-problem.png');
+   }
+
+   #forecast-solution {
+     background-image: url('../images/forecast-solution.png');
    }
 
    #forecast-surveys {
