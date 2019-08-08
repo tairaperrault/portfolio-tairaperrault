@@ -33,7 +33,7 @@
             <ul>
               <li><a class="nav-active" href="work.html">Work</a></li>
               <li><a class="nav-inactive" href="about.html">About</a></li>
-              <li><a class="nav-inactive" href="contact.html">Contact</a></li>
+              <li><a class="nav-inactive button-open" id="button-open">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -266,62 +266,62 @@
     </footer>
 
 
-    <!-- Contact modal-->
-    <div class="modal-wrapper hidden">
+            <!-- Contact modal-->
+        <div class="modal-wrapper closed" id="modal-wrapper">
 
-        <div class="modal">
+          <div class="modal closed" id="modal">
 
-        <!-- Modal header-->
-        <div class="container">
-          <div class="modal-header">
+              <a href="index.html"><img src="images/icon-logo.svg" alt="Taira Perrault" class="modal-logo"></a>
+
+              <div class="button-close" id="button-close">
+                  <div class="leftright"></div>
+                  <div class="rightleft"></div>
+                  <label class="close">CLOSE</label>
+              </div>
+
+
+            <!-- Modal body-->
             <div class="container">
-              <a href="index.html"><img src="images/icon-logo.svg" alt="Taira Perrault"></a>
-                <button type="button-close" class="close" data-dismiss="modal">&times;</button>
+              <div class="modal-body">
+
+
+                <h5>CONTACT</h5>
+
+                  <a href="mailto:hello@tairaperrault.com" class="contact-email">
+                      <span>hello@tairaperrault.com</span>
+                  </a>
+
+              </div>
+            </div>
+
+
+            <!-- Modal footer-->
+          <div class="container">
+            <div class="modal-footer">
+
+                <ul class="social-icons">
+                <!-- Email -->
+                  <li>
+                      <a href="mailto:hello@tairaperrault.com"><img src="images/icon-email.svg" alt="Email"></a>
+                  </li>
+
+                <!-- Twitter -->
+                  <li>
+                      <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                  </li>
+
+                <!-- Linkedin-->
+                  <li>
+                      <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+                  </li>
+              </ul>
+
+              <h6>&copy; 2019 Taira Perrault</h6>
             </div>
           </div>
-        </div>
 
-
-        <!-- Modal body-->
-        <div class="container">
-          <div class="modal-body">
-            <h4>CONTACT</h4>
-              <a href="mailto:hello@tairaperrault.com" class="contact-email">
-                  <span>hello@tairaperrault.com</span>
-              </a>
           </div>
         </div>
-
-
-        <!-- Modal footer-->
-          <div class="container">
-              <div class="modal-footer">
-                <h5>GET IN TOUCH</h5>
-                <img src="images/icon-graydash.svg" alt="Gray Dash">
-
-                  <ul class="social-icons">
-                  <!-- Email -->
-                    <li>
-                        <a href="mailto:hello@tairaperrault.com"><img src="images/icon-email.svg" alt="Email"></a>
-                    </li>
-
-                  <!-- Twitter -->
-                    <li>
-                        <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-                    </li>
-
-                  <!-- Linkedin-->
-                    <li>
-                        <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
-                    </li>
-                </ul>
-
-                <h6>&copy; 2019 Taira Perrault</h6>
-              </div>
-          </div>
-
-        </div>
-    </div>
 
         <!-- Jquery follwed by your custom javascript. Uncomment jQuery only if needed! -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->

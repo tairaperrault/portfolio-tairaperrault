@@ -445,17 +445,6 @@ nav a:hover {
   }
 
 
-     @media (max-width: 600px) {
-
-       .column-50.imge-information {
-         height: 600px;
-         background-repeat: no-repeat;
-         background-size: cover;
-
-       }
-
-    }
-
 
 
 
@@ -469,7 +458,7 @@ nav a:hover {
    }
 
    .work-square {
-     width: 33.33%;
+     min-width: 33.33%;
      height: 399px;
      display: flex;
      margin-top: 10%;
@@ -478,7 +467,7 @@ nav a:hover {
   }
 
   .hover {
-    width: 100%;
+    min-width: 100%;
     height: 399px;
     text-align: center;
     opacity: 0;
@@ -694,6 +683,10 @@ nav a:hover {
      padding: 0px;
    }
 
+   #leslie img, #erin img {
+     width: 50%;
+   }
+
    .full-width {
      margin: 0% auto 0% auto;
      min-width: 100%;
@@ -705,27 +698,43 @@ nav a:hover {
 
 
    #forecast-problem {
-     background-image: url('../images/forecast-problem.png');
+     background-image: url('../images/forecast-problem.jpg');
    }
 
    #forecast-solution {
-     background-image: url('../images/forecast-solution.png');
+     background-image: url('../images/forecast-solution.jpg');
    }
 
    #forecast-surveys {
-     background-image: url('../images/forecast-surveys.png');
+     background-image: url('../images/forecast-surveys.jpg');
    }
 
    #forecast-flows {
-     background-image: url('../images/forecast-flows.png');
+     background-image: url('../images/forecast-flows.jpg');
    }
 
    #forecast-sketches {
-     background-image: url('../images/forecast-sketches.png');
+     background-image: url('../images/forecast-sketches.jpg');
+   }
+
+   #forecast-mockups {
+     background-image: url('../images/forecast-mockups.jpg');
+   }
+
+   #forecast-mockuptesting {
+     background-image: url('../images/forecast-mockuptesting.jpg');
    }
 
    #forecast-branding {
-     background-image: url('../images/forecast-branding.png');
+     background-image: url('../images/forecast-branding.jpg');
+   }
+
+   #forecast-prototypes {
+     background-image: url('../images/forecast-prototypes.jpg');
+   }
+
+   #forecast-prototypetesting {
+     background-image: url('../images/forecast-prototypetesting.jpg');
    }
 
 

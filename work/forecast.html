@@ -33,7 +33,7 @@
             <ul>
               <li><a class="nav-active" href="../work.html">Work</a></li>
               <li><a class="nav-inactive" href="../about.html">About</a></li>
-              <li><a class="nav-inactive" href="../contact.html">Contact</a></li>
+              <li><a class="nav-inactive button-open" id="button-open">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -266,7 +266,7 @@
             <div class="column-10"></div>
 
             <div class="column-30 information text" id="leslie">
-                <img src="../images/forecast-leslie.png" alt="Millennial Female">
+                <img src="../images/forecast-leslie.jpg" alt="Millennial Female">
 
                     <h3>LESLIE</h3>
                       <p id="subtext">FEMALE • 28 • BLOGGER</p>
@@ -277,7 +277,7 @@
             <div class="column-20"></div>
 
             <div class="column-30 information text" id="erin">
-                <img src="../images/forecast-erin.png" alt="Student Female">
+                <img src="../images/forecast-erin.jpg" alt="Student Female">
 
                     <h3>ERIN</h3>
                       <p id="subtext">FEMALE • 19 • STUDENT</p>
@@ -403,9 +403,7 @@
                   <p>The wireframes first started off as rough sketches which then were refined in Figma as low-fi mockups. This is where page variations could easily be made. To ensure the best layouts for the website.</p>
             </div>
 
-            <div class="image-information">
-                  <img src="../images/forecast-mockups.png" class="half-width" id="forecast-mockups" alt="Digital Wireframe Mockups">
-            </div>
+            <div class="column-50 image-information" id="forecast-mockups"></div>
 
           </div>
         </section>
@@ -413,11 +411,9 @@
 
                 <!-- Mockup testing section -->
         <section class="information project-light project">
-          <div class="container container-flex full">
+          <div class="container container-reverse full">
 
-            <div class="image-information">
-                  <img src="../images/forecast-mockuptesting.png" class="half-width" id="forecast-mockuptesting" alt="Digital Refined Wireframe Mockups After Testing">
-            </div>
+            <div class="column-50 image-information" id="forecast-mockuptesting"></div>
 
             <div class="column-50 information-text half-width-padding">
 
@@ -466,7 +462,7 @@
 
                 <!-- Prototypes section -->
         <section class="information project-light project">
-          <div class="container container-flex full">
+          <div class="container container-reverse full">
 
 
             <div class="column-50 information-text half-width-padding">
@@ -475,9 +471,7 @@
                   <p>After the initial user tests were performed on the wireframes to see what was and wasn’t working we refined the mockups to flow more easily. As well as used the branding that was developed to overlay the boxes that were for placement purposes. This resulting in a high fidelity mockup and prototype that users could click through and experience as if it were a truly working website.</p>
             </div>
 
-            <div class="image-information">
-              <img src="../images/forecast-prototypes.png" class="half-width" id="forecast-prototypes" alt="Digital Mockups Containing Branding and Imagery">
-            </div>
+            <div class="column-50 image-information" id="forecast-prototypes"></div>
 
           </div>
         </section>
@@ -487,9 +481,7 @@
         <section class="information project-light project">
           <div class="container container-flex full">
 
-            <div class="image-information">
-              <img src="../images/forecast-prototypetesting.png" class="half-width" id="forecast-prototypetesting" alt="Refinded Digital Mockups Containing Branding and Imagery After Testing">
-            </div>
+            <div class="column-50 image-information" id="forecast-prototypetesting"></div>
 
             <div class="column-50 information-text half-width-padding">
 
@@ -575,62 +567,62 @@
         </footer>
 
 
-        <!-- Contact modal-->
-        <div class="modal-wrapper hidden">
+                <!-- Contact modal-->
+            <div class="modal-wrapper closed" id="modal-wrapper">
 
-            <div class="modal">
+              <div class="modal closed" id="modal">
 
-            <!-- Modal header-->
-            <div class="container">
-              <div class="modal-header">
+                  <a href="../index.html"><img src="../images/icon-logo.svg" alt="Taira Perrault" class="modal-logo"></a>
+
+                  <div class="button-close" id="button-close">
+                      <div class="leftright"></div>
+                      <div class="rightleft"></div>
+                      <label class="close">CLOSE</label>
+                  </div>
+
+
+                <!-- Modal body-->
                 <div class="container">
-                  <a href="../index.html"><img src="../images/icon-logo.svg" alt="Taira Perrault"></a>
-                    <button type="button-close" class="close" data-dismiss="modal">&times;</button>
+                  <div class="modal-body">
+
+
+                    <h5>CONTACT</h5>
+
+                      <a href="mailto:hello@tairaperrault.com" class="contact-email">
+                          <span>hello@tairaperrault.com</span>
+                      </a>
+
+                  </div>
+                </div>
+
+
+                <!-- Modal footer-->
+              <div class="container">
+                <div class="modal-footer">
+
+                    <ul class="social-icons">
+                    <!-- Email -->
+                      <li>
+                          <a href="mailto:hello@tairaperrault.com"><img src="../images/icon-email.svg" alt="Email"></a>
+                      </li>
+
+                    <!-- Twitter -->
+                      <li>
+                          <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="../images/icon-twitter.svg" alt="Twitter"></a>
+                      </li>
+
+                    <!-- Linkedin-->
+                      <li>
+                          <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="../images/icon-linkedin.svg" alt="LinkedIn"></a>
+                      </li>
+                  </ul>
+
+                  <h6>&copy; 2019 Taira Perrault</h6>
                 </div>
               </div>
-            </div>
 
-
-            <!-- Modal body-->
-            <div class="container">
-              <div class="modal-body">
-                <h4>CONTACT</h4>
-                  <a href="mailto:hello@tairaperrault.com" class="contact-email">
-                      <span>hello@tairaperrault.com</span>
-                  </a>
               </div>
             </div>
-
-
-            <!-- Modal footer-->
-              <div class="container">
-                  <div class="modal-footer">
-                    <h5>GET IN TOUCH</h5>
-                    <img src="../images/icon-graydash.svg" alt="Gray Dash">
-
-                      <ul class="social-icons">
-                      <!-- Email -->
-                        <li>
-                            <a href="mailto:hello@tairaperrault.com"><img src="../images/icon-email.svg" alt="Email"></a>
-                        </li>
-
-                      <!-- Twitter -->
-                        <li>
-                            <a href="https://twitter.com/tairaperrault?lang=en" target="_blank"><img src="../images/icon-twitter.svg" alt="Twitter"></a>
-                        </li>
-
-                      <!-- Linkedin-->
-                        <li>
-                            <a href="https://www.linkedin.com/in/tairaperrault/" target="_blank"><img src="../images/icon-linkedin.svg" alt="LinkedIn"></a>
-                        </li>
-                    </ul>
-
-                    <h6>&copy; 2019 Taira Perrault</h6>
-                  </div>
-              </div>
-
-            </div>
-        </div>
 
         <!-- Jquery follwed by your custom javascript. Uncomment jQuery only if needed! -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
