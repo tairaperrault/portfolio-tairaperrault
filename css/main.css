@@ -1,32 +1,32 @@
 /* ==========================================================================
    General
    ========================================================================== */
-body{
-height: 100%;
-}
-.container {
-  margin: 0% 10% 0% 10%;
-}
+   body{
+   height: 100%;
+   }
+   .container {
+     margin: 0% 10% 0% 10%;
+   }
 
-.container-flex {
-  display: flex;
-  flex-wrap: wrap-reverse;
-}
+   .container-flex {
+     display: flex;
+     flex-wrap: wrap-reverse;
+   }
 
-.container-noflex {
-  display: flex;
-  flex-wrap: wrap;
-}
+   .container-reverse {
+     display: flex;
+   }
 
-@media (min-width: 600px) {
-  .container-flex {
-    flex-wrap: nowrap;
-  }
-}
+   @media (min-width: 600px) {
+     .container-flex {
+       flex-wrap: nowrap;
+     }
+   }
 
-.reverse-wrap .container-flex {
-  flex-direction: row-reverse
-}
+   .row-reverse .container-flex {
+     flex-direction: row-reverse;
+   }
+
 
 
 /* ==========================================================================
@@ -64,7 +64,16 @@ nav ul li {
   margin-left: 10%;
 }
 
+#button-open {
+  cursor: pointer;
+}
 
+
+ @media (max-width: 600px) {
+   #button-open {
+     display: none;
+   }
+ }
 
 /* ==========================================================================
    Footer
@@ -275,7 +284,8 @@ nav a:hover {
 
     #down-arrow {
       display: flex;
-      margin: 0px auto 10% auto;
+      margin: 10% auto 10% auto;
+      z-index: 9999;
     }
 
 /* ==========================================================================
@@ -412,7 +422,7 @@ nav a:hover {
 
      .column-50 {
        width: 50%;
-       padding: 0px 30px;
+       padding: 0% 3%;
 
      }
 
@@ -440,10 +450,7 @@ nav a:hover {
      width: 399px;
      height: 399px;
      display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
-     margin: 10% auto 0% auto;
+     margin-top: 10%;
      background-repeat: no-repeat;
      background-size: cover;
   }
@@ -623,7 +630,7 @@ nav a:hover {
      padding:0px;
    }
 
-   .container.container-flex.full {
+   .container.container-flex.full, .container.container-reverse.full {
      max-width: none;
    }
 
@@ -727,6 +734,158 @@ nav a:hover {
   display: flex;
 }
 
+
+
+/* ==========================================================================
+   Modal
+   ========================================================================== */
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #882052;
+  z-index: 1000;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 10px rgba(84,0,47, 0.3);
+
+  min-width: 1200px;
+
+  min-height: 600px;
+
+  z-index: 1010;
+}
+
+.closed {
+  display: none;
+}
+
+.button-close {
+  position: absolute;
+  z-index: 1;
+  right: 7%;
+  top: 9%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+
+.leftright{
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #882052;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+}
+
+.rightleft{
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #882052;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all .3s ease-in;
+}
+
+label{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #4B4B4B;
+  text-transform: uppercase;
+  transition: all .3s ease-in;
+  opacity: 0;
+}
+
+.close{
+  margin: 60px 0 0 0;
+  position: absolute;
+}
+
+.button-close:hover .leftright{
+  transform: rotate(-45deg);
+  background-color: #54002F;
+}
+.button-close:hover .rightleft{
+  transform: rotate(45deg);
+  background-color: #54002F;
+}
+
+.button-close:hover label{
+  opacity: 1;
+}
+
+
+  .modal-logo {
+    display: flex;
+    position: relative;
+    margin: 4% 0% 0% 7%;
+}
+
+  .modal-body {
+    clear: both;
+    position: relative;
+    margin: 11% auto 5% auto;
+    text-align: center;
+}
+
+  .contact-email {
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #882052;
+
+}
+
+  .contact-email:hover {
+    color: #54002F;
+}
+
+  .modal-footer {
+    clear: both;
+    position: relative;
+    margin: 15% auto 5% auto;
+    text-align: center;
+}
+
+  .modal-footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .modal-footer ul li {
+    display: block;
+    margin: 0px 25px 0px 25px;
+  }
+
+  .modal-footer h5 {
+    margin-bottom: 1%;
+    color: #882052;
+ }
+
+
+ @media (max-width: 600px) {
+   .modal-wrapper {
+     display: none;
+   }
+ }
 
 /* ==========================================================================
    Helper classes (optional)
