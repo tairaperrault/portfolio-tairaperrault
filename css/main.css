@@ -1297,6 +1297,14 @@ nav a:hover {
        }
      }
 
+
+     @media (min-width: 600px) {
+       .hamburger-open {
+         display: none;
+       }
+     }
+
+
      @media (max-width: 600px) {
 
        .hamburger-open {
