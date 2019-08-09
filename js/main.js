@@ -15,3 +15,22 @@
      modal.classList.toggle("closed");
      modalWrapper.classList.toggle("closed");
    });
+
+
+   /* ==========================================================================
+      Hamburger Modal
+      ========================================================================== */
+      var hamburger = document.querySelector("#hamburger");
+      var hamburgerWrapper = document.querySelector("#hamburger-wrapper");
+      var hamburgerClose = document.querySelector("#hamburger-close");
+      var hamburgerOpen = document.querySelector("#hamburger-open");
+
+      hamburgerClose.addEventListener("click", function() {
+        hamburger.classList.toggle("closed");
+        hamburgerWrapper.classList.toggle("closed");
+      });
+
+      hamburgerOpen.addEventListener("click", function() {
+        hamburger.classList.toggle("closed");
+        hamburgerWrapper.classList.toggle("closed");
+      });

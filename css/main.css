@@ -55,6 +55,14 @@ header .container {
   align-items: center;
 }
 
+
+@media (max-width: 600px) {
+  .container .logo {
+    margin: 2% 0% 0% 0%;
+    width: 18%;
+  }
+}
+
 a {
 text-decoration: none;
 }
@@ -266,6 +274,11 @@ nav a:hover {
   }
 
 
+    @media (max-width: 600px) {
+        .hero .container {
+          margin-top: 8%;
+        }
+      }
 
   .hero-image-work {
     max-width: 100%;
@@ -295,6 +308,18 @@ nav a:hover {
     }
   }
 
+
+  @media (max-width: 600px) {
+    #hero-index {
+      position: absolute;
+      max-width: 60%;
+      height: auto;
+      top: 18%;
+      left: 33%;
+    }
+  }
+
+
   @media (max-width: 1100px) {
     #hero-work {
       position: absolute;
@@ -304,6 +329,18 @@ nav a:hover {
       left: 37%;
     }
   }
+
+
+  @media (max-width: 600px) {
+    #hero-work {
+      position: absolute;
+      max-width: 60%;
+      height: auto;
+      top: 20%;
+      left: 37%;
+    }
+  }
+
 
   @media (max-width: 1100px) {
     #hero-about {
@@ -315,6 +352,17 @@ nav a:hover {
     }
   }
 
+  @media (max-width: 600px) {
+    #hero-about {
+      position: absolute;
+      max-width: 60%;
+      height: auto;
+      top: 19%;
+      left: 35%;
+    }
+  }
+
+
     #hero-h1 {
       margin: 2% 0% 15% 0%;
     }
@@ -322,7 +370,7 @@ nav a:hover {
     #down-arrow {
       display: flex;
       margin: 12% auto 10% auto;
-      z-index: 9999;
+      z-index: 500;
     }
 
     @media (max-width: 600px) {
@@ -330,9 +378,9 @@ nav a:hover {
         display: flex;
         margin: 12% auto 10% auto;
         position: absolute;
-        top: 35%;
-        left: 48%;
-        z-index: 9999;
+        top: 38%;
+        left: 46%;
+        z-index: 500;
       }
     }
 
@@ -421,6 +469,13 @@ nav a:hover {
        background-color: #54002F;
       }
 
+
+      @media (hover:none), (hover:on-demand) {
+        .button-center-one a:hover, .button-center-two a:hover, .button-action a:hover {
+          /* suppress hover effect on devices that don't support hover fully */
+          background: none;
+        }
+      }
 
 /* ==========================================================================
    Index Page Projects
@@ -957,7 +1012,7 @@ nav a:hover {
       width: 100%;
       height: 100%;
       background-color: #882052;
-      z-index: 1000;
+      z-index: 1010;
     }
 
     .modal {
@@ -973,7 +1028,7 @@ nav a:hover {
 
       min-height: 600px;
 
-      z-index: 1010;
+      z-index: 1100;
     }
 
     .closed {
@@ -982,7 +1037,7 @@ nav a:hover {
 
     .button-close {
       position: absolute;
-      z-index: 1;
+      z-index: 1001;
       right: 7%;
       top: 9%;
       width: 32px;
@@ -1101,7 +1156,7 @@ nav a:hover {
         width: 100%;
         height: 100%;
         background-color: #882052;
-        z-index: 1000;
+        z-index: 1010;
       }
 
       .modal {
@@ -1117,7 +1172,7 @@ nav a:hover {
 
         min-height: 425px;
 
-        z-index: 1010;
+        z-index: 1100;
       }
 
       .closed {
@@ -1126,7 +1181,7 @@ nav a:hover {
 
       .button-close {
         position: absolute;
-        z-index: 1;
+        z-index: 1001;
         right: 9%;
         top: 9%;
         width: 32px;
@@ -1241,6 +1296,128 @@ nav a:hover {
          display: none;
        }
      }
+
+     @media (max-width: 600px) {
+
+       .hamburger-open {
+         position: absolute;
+         top: 6%;
+         left: 80%;
+         width: 35px;
+         height: 35px;
+         display: flex;
+         cursor: pointer;
+         }
+
+
+        .hamburger-wrapper {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #882052;
+          z-index: 1010;
+        }
+
+        .hamburger {
+          display: block;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #ffffff;
+          box-shadow: 0 0 30px 10px rgba(84,0,47, 0.3);
+
+          min-width: 300px;
+
+          min-height: 600px;
+
+          z-index: 1100;
+        }
+
+        .closed {
+          display: none;
+        }
+
+        .hamburger-close {
+          position: absolute;
+          z-index: 1001;
+          right: 20%;
+          top: 5%;
+          width: 15px;
+          height: 15px;
+          cursor: pointer;
+        }
+
+
+        .close{
+          margin: 60px 0 0 0;
+          position: absolute;
+        }
+
+        .button-close:hover .leftright{
+          transform: rotate(-45deg);
+          background-color: #54002F;
+        }
+        .button-close:hover .rightleft{
+          transform: rotate(45deg);
+          background-color: #54002F;
+        }
+
+        .button-close:hover label{
+          opacity: 1;
+        }
+
+          .hamburger-logo {
+            display: flex;
+            position: relative;
+            margin: 45% auto 18% auto;
+        }
+
+
+        .hamburger-body ul li {
+          display: block;
+          margin: 20% auto 0% auto;
+        }
+
+        .hamburger-body ul {
+          margin: 0% auto 0% auto;
+          padding: 0%;
+          font-size: 28px;
+          font-weight: 700;
+          font-family: 'Raleway', Arial, sans-serif;
+          color: #4B4B4B;
+          text-align: center;
+
+        }
+
+
+          .hamburger-footer {
+            clear: both;
+            position: relative;
+            margin: 30% auto 5% auto;
+            text-align: center;
+        }
+
+          .hamburger-footer ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+          }
+
+          .hamburger-footer ul li {
+            display: block;
+            margin: 0px 25px 0px 25px;
+          }
+
+          .hamburger-footer h5 {
+            margin-bottom: 1%;
+            color: #882052;
+         }
+       }
+
 
 /* ==========================================================================
    Helper classes (optional)
