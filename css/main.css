@@ -6,7 +6,7 @@
  }
 
  .container {
-   margin: 0% 10% 0% 10%;
+   margin: 0 10%;
  }
 
  .container-flex {
@@ -40,12 +40,12 @@
 
 
 header {
-  padding: 4% 0% 2% 0%;
+  padding: 4% 0 2% 0;
 }
 
 @media (max-width: 600px) {
   header {
-  margin: 4% 0% 4% 0%;
+  margin: 4% 0;
   }
 }
 
@@ -58,7 +58,7 @@ header .container {
 
 @media (max-width: 600px) {
   .container .logo {
-    margin: 2% 0% 0% 0%;
+    margin-top: 2%;
     width: 18%;
   }
 }
@@ -94,6 +94,7 @@ nav ul li {
    }
  }
 
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -102,7 +103,7 @@ footer {
   clear: both;
   position: relative;
   height: 170px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 100px;
   text-align: center;
 }
@@ -111,19 +112,18 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px;
+    padding: 0;
   }
 
   footer ul li {
     display: block;
-    margin: 0px 25px 0px 25px;
+    margin: 0 25px;
   }
 
   footer h5 {
     margin-bottom: 1%;
     color: #882052;
  }
-
 
  #up-arrow {
    width: 30px;
@@ -134,7 +134,7 @@ footer {
 
  @media (max-width: 600px) {
    #up-arrow {
-   margin: 20% auto auto auto;
+   margin-top: 20%;
    }
  }
 
@@ -233,6 +233,7 @@ nav ul {
   color: #4B4B4B;
 }
 
+
 .nav-active {
   font-weight: 800;
   color: #882052;
@@ -251,12 +252,14 @@ nav a:hover {
 }
 
 
+
+
 /* ==========================================================================
    Hero
    ========================================================================== */
 
 .hero {
-  margin: 2% 0% 0% 0%;
+  margin-top: 2%;
   min-height: calc(65vh - 164px);
 }
 
@@ -362,9 +365,8 @@ nav a:hover {
     }
   }
 
-
     #hero-h1 {
-      margin: 2% 0% 15% 0%;
+      margin: 2% 0 15% 0;
     }
 
     #down-arrow {
@@ -390,20 +392,20 @@ nav a:hover {
 
    .plum-divider {
      background-color: #882052;
-     padding: 60px 0px 40px 0px;
+     padding: 60px 0 40px 0;
    }
 
    #plum-divider-work {
-     padding: 60px 0px 40px 0px;
+     padding: 60px 0 40px 0;
    }
 
    #plum-divider-about {
-     padding: 60 0px 60px 0px;
+     padding: 60px 0;
    }
 
    .plum-divider .container {
      max-width: 55%;
-     margin: 0% auto 0% auto;
+     margin: 0 auto 0 auto;
    }
 
    .plum-divider h4, .plum-divider h5, .plum-divider p {
@@ -472,7 +474,6 @@ nav a:hover {
 
       @media (hover:none), (hover:on-demand) {
         .button-center-one a:hover, .button-center-two a:hover, .button-action a:hover {
-          /* suppress hover effect on devices that don't support hover fully */
           background: none;
         }
       }
@@ -488,7 +489,7 @@ nav a:hover {
    }
 
    .title-2 h2 {
-     margin: 60px 0px 0px 0px;
+     margin-top: 60px;
      text-align: center;
      color: #882052
    }
@@ -521,9 +522,12 @@ nav a:hover {
      }
    }
 
+
    .column-5, .column-10, .column-20, .column-30, .column-40, .column-50 {
      width: 100%;
-  }
+   }
+
+
 
    @media (min-width: 600px) {
 
@@ -548,34 +552,43 @@ nav a:hover {
 
      .column-40 {
        width: 40%;
-       padding: 0% 2% 0% 2%;
-       margin: 3% 0% 3% 0%;
+       padding: 0 2%;
+       margin: 3% 0;
      }
 
      .column-50 {
        width: 50%;
-       padding: 0% 3%;
+       padding: 0 3%;
        background-repeat: no-repeat;
        background-size: cover;
 
      }
   }
 
-.image-center {
-  image-orientation: center;
-  align-items: center;
-  margin: 5% auto 0% auto;
-}
+   .image-center {
+     image-orientation: center;
+     align-items: center;
+     margin: 5% auto 0 auto;
+   }
 
+   @media (min-width: 1200px) {
+     .below-1100 {
+       display: none;
+     }
+   }
 
-
+   @media (max-width: 1200px) {
+     .above-1100 {
+       display: none;
+     }
+   }
 
 /* ==========================================================================
    Work Squares
    ========================================================================== */
 
    .work-squares {
-     margin: 0% auto 0% auto;
+     margin: 0 auto;
    }
 
    .work-square {
@@ -597,19 +610,19 @@ nav a:hover {
   }
 
  .hover h3 {
-   margin: 0% 12% 5% 12%;
+   margin: 0 12% 5% 12%;
    padding-top: 27%;
    color: #ffffff;
  }
 
 
  #work-square-button {
-   padding-top: 0%;
+   padding-top: 0;
    font-size: 18px;
  }
 
  .hover p {
-   margin: 0% 12% 5% 12%;
+   margin: 0 12% 5% 12%;
    color: #ffffff;
  }
 
@@ -673,8 +686,8 @@ nav a:hover {
    ========================================================================== */
 
    .side-header {
-     inline: block;
-     margin: 0px;
+     display: inline-block;
+     margin: 0;
      font-size: 24px;
      font-weight: 700;
      text-align: right;
@@ -684,7 +697,7 @@ nav a:hover {
    }
 
    .side-header ul {
-     padding: 0px;
+     padding: 0;
    }
 
    .side-header ul li {
@@ -692,8 +705,8 @@ nav a:hover {
    }
 
    .side-header-plum h3{
-     inline: block;
-     margin: 0px;
+     display: inline-block;
+     margin: 0;
      font-size: 24px;
      font-weight: 700;
      text-transform: uppercase;
@@ -703,7 +716,7 @@ nav a:hover {
    }
 
    .information-text {
-     padding: 0px;
+     padding: 0;
    }
 
    .information-text h2 {
@@ -718,7 +731,7 @@ nav a:hover {
      font-family: 'Raleway', Arial, sans-serif;
      color: #4B4B4B;
      line-height: 160%;
-     padding: 0px;
+     padding: 0;
    }
 
    .information-text ul li {
@@ -731,11 +744,11 @@ nav a:hover {
 
 
    #button-padding {
-     padding: 0px;
+     padding: 0;
    }
 
    #button-resume, #top-element {
-     margin: 0%;
+     margin: 0;
    }
 
    #about-me, #bio, #experience, #resume {
@@ -743,7 +756,7 @@ nav a:hover {
    }
 
    #about-me .container {
-       margin: 0% 10% 0% 10%;
+       margin: 0 10%;
      }
 
 
@@ -760,7 +773,7 @@ nav a:hover {
 
     @media (max-width: 600px) {
         #about-me .container {
-        margin: 0% 0% 0% 0%;
+        margin: 0 0;
         }
       }
 
@@ -769,7 +782,7 @@ nav a:hover {
       width: 100%;
       height: 300px;
       padding: 0%;
-      margin: 0% 0% 0% 0%;
+      margin: 0 0;
       background-repeat: no-repeat;
       background-size: cover;
       }
@@ -778,14 +791,14 @@ nav a:hover {
     @media (max-width: 600px) {
       .side-header {
         text-align: left;
-        margin: 10% 0% 15% 0%;
+        margin: 10% 0 15% 0;
         }
       }
 
     @media (max-width: 600px) {
       .side-header.about {
         text-align: left;
-        margin: 10% 10% 0% 10%;
+        margin: 10% 10% 0 10%;
         }
       }
 
@@ -802,12 +815,12 @@ nav a:hover {
 
 
    .container.full{
-     margin: 0px;
-     padding:0px;
+     margin: 0;
+     padding: 0;
    }
 
    .information.project-light.project {
-     padding:0px;
+     padding: 0;
    }
 
    .container.container-flex.full, .container.container-reverse.full {
@@ -815,15 +828,15 @@ nav a:hover {
    }
 
    .top-margin-none {
-     margin-top: 0px;
+     margin-top: 0;
    }
 
    .button-action.margin-none a {
-     margin: 3% 0% 0% 0%;
+     margin: 3% 0 0 0;
    }
 
    .column-50.information-text.process p {
-     margin-bottom: 0px;
+     margin-bottom: 0;
    }
 
    .top-margin-60 {
@@ -849,7 +862,7 @@ nav a:hover {
    }
 
    .column-50.image-information {
-     padding: 0px;
+     padding: 0;
    }
 
    #leslie img, #erin img {
@@ -857,7 +870,7 @@ nav a:hover {
    }
 
    .full-width {
-     margin: 0% auto 0% auto;
+     margin: 0 auto;
      min-width: 100%;
      min-height: 500px;
      display: flex;
@@ -866,7 +879,7 @@ nav a:hover {
    }
 
 #forecast-conclusion {
-  padding: 10% 0% 10% 0%;
+  padding: 10% 0;
 }
 
 
@@ -914,8 +927,8 @@ nav a:hover {
      .column-50.image-information {
        width: 100%;
        height: 500px;
-       padding: 0%;
-       margin: 0%  0% 0% 0%;
+       padding: 0;
+       margin: 0;
        background-repeat: no-repeat;
        background-size: cover;
      }
@@ -930,13 +943,13 @@ nav a:hover {
 
    @media (max-width: 600px) {
      .information-text h2 {
-       padding: 5% 0% 5% 0%;
+       padding: 5% 0;
      }
    }
 
    @media (max-width: 600px) {
      .information-text h3 {
-       padding: 5% 0% 0% 0%;
+       padding: 5% 0 0 0;
      }
    }
 
@@ -980,8 +993,8 @@ nav a:hover {
    }
 
 .image-smaller {
-  margin: 0% auto 0% auto;
-  padding: 0% 3% 0% 30%
+  margin: 0 auto 0 auto;
+  padding: 0 3% 0 3%;
   align-items: center;
   justify-content: center;
 }
@@ -991,12 +1004,51 @@ nav a:hover {
 }
 
 .full-image {
-  margin: 0% auto 0% auto;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
   display: flex;
 }
 
+/* ==========================================================================
+   Previous and Next
+   ========================================================================== */
+
+   .previous-next {
+     clear: both;
+     position: relative;
+     text-align: center;
+     margin: 0 auto;
+    }
+
+
+  .previous-next a {
+    text-decoration: none;
+   }
+
+  .previous-next ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .previous-next ul li {
+    width: 100%;
+    display: block;
+  }
+
+  .previous-next {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #882052;
+  }
+
+  .previous-next a:active {
+    color: #882052;
+  }
 
 
 /* ==========================================================================
@@ -1099,7 +1151,7 @@ nav a:hover {
       .modal-logo {
         display: flex;
         position: relative;
-        margin: 4% 0% 0% 7%;
+        margin: 4% 0 0 7%;
     }
 
       .modal-body {
@@ -1132,12 +1184,12 @@ nav a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0px;
+        padding: 0;
       }
 
       .modal-footer ul li {
         display: block;
-        margin: 0px 25px 0px 25px;
+        margin: 0 25px 0 25px;
       }
 
       .modal-footer h5 {
@@ -1243,7 +1295,7 @@ nav a:hover {
         .modal-logo {
           display: flex;
           position: relative;
-          margin: 5% 0% 0% 7%;
+          margin: 5% 0 0 7%;
       }
 
         .modal-body {
@@ -1281,7 +1333,7 @@ nav a:hover {
 
         .modal-footer ul li {
           display: block;
-          margin: 0px 25px 0px 25px;
+          margin: 0 25px 0 25px;
         }
 
         .modal-footer h5 {
@@ -1386,12 +1438,12 @@ nav a:hover {
 
         .hamburger-body ul li {
           display: block;
-          margin: 20% auto 0% auto;
+          margin: 20% auto 0 auto;
         }
 
         .hamburger-body ul {
-          margin: 0% auto 0% auto;
-          padding: 0%;
+          margin: 0 auto;
+          padding: 0;
           font-size: 28px;
           font-weight: 700;
           font-family: 'Raleway', Arial, sans-serif;
@@ -1412,12 +1464,12 @@ nav a:hover {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0px;
+            padding: 0;
           }
 
           .hamburger-footer ul li {
             display: block;
-            margin: 0px 25px 0px 25px;
+            margin: 0 25px;
           }
 
           .hamburger-footer h5 {
