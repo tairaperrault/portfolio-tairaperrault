@@ -130,6 +130,7 @@ footer {
    height: 30px;
    display: flex;
    margin: 10% auto 5% auto;
+   scroll-behavior: smooth;
  }
 
  @media (max-width: 600px) {
@@ -386,6 +387,7 @@ nav a:hover {
         top: 38%;
         left: 46%;
         z-index: 500;
+        scroll-behavior: smooth;
       }
     }
 
@@ -411,10 +413,23 @@ nav a:hover {
      margin: 0 auto 0 auto;
    }
 
+   @media (max-width: 600px) {
+   .plum-divider .container  {
+       max-width: 74%;
+     }
+   }
+
+
    .plum-divider h4, .plum-divider h5, .plum-divider p {
      color: #ffffff;
      text-align: center;
      margin: auto;
+   }
+
+   @media (max-width: 600px) {
+   .plum-divider h4, .plum-divider p  {
+     text-align: left;
+     }
    }
 
    .plum-divider h4 {
@@ -519,7 +534,7 @@ nav a:hover {
    }
 
    @media (max-width: 600px) {
-     .project-light, .project-dark {
+     .project-light h3, .project-dark h3 {
        text-align: center;
 
      }
@@ -707,8 +722,7 @@ nav a:hover {
      display: block;
    }
 
-   .side-header-plum h3{
-     display: inline-block;
+   .side-header-plum h3 {
      margin: 0;
      font-size: 24px;
      font-weight: 700;
@@ -854,6 +868,10 @@ nav a:hover {
      align-items: center;
      justify-content: center;
      text-align: center;
+   }
+
+   #left {
+     text-align: left;
    }
 
    #subtext {
@@ -1022,6 +1040,7 @@ nav a:hover {
      position: relative;
      text-align: center;
      margin: 0 auto;
+     padding: 0;
     }
 
 
@@ -1034,6 +1053,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding: 0;
   }
 
   .previous-next ul li {
