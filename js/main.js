@@ -34,3 +34,23 @@
         hamburger.classList.toggle("closed");
         hamburgerWrapper.classList.toggle("closed");
       });
+
+
+   /* ==========================================================================
+      Lightbox Gallery
+      ========================================================================== */
+
+      var lightbox = document.querySelector("#lightbox");
+      var lightboxWrapper = document.querySelector("#lightbox-wrapper");
+      var lightboxClose = document.querySelector("#lightbox-close");
+      var lightboxOpen = document.querySelector("#lightbox-open");
+
+      lightboxClose.addEventListener("click", function() {
+        lightbox.classList.toggle("closed");
+        lightboxWrapper.classList.toggle("closed");
+      });
+
+      lightboxOpen.addEventListener("click", function() {
+        lightbox.classList.toggle("closed");
+        lightboxWrapper.classList.toggle("closed");
+      });
