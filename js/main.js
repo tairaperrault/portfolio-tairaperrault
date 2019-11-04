@@ -140,7 +140,7 @@ var masonryPreloader = document.querySelector('.masonry-preloader');
        * A maonsry grid with 8px gutter, with 3 columns on desktop,
        * 2 on tablet, and 1 column on mobile devices.
        */
-      masonry('.masonry', '.masonry-brick', 8, 3, 2, 1);
+      masonry('.masonry', '.grid-item', 8, 3, 2, 1);
 
       // Done!
       console.log('Flexbox Masonry Loaded');
