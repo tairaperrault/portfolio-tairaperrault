@@ -36,57 +36,24 @@
       });
 
 
-   /* ==========================================================================
-      Lightbox Gallery
-      ========================================================================== */
-
-      var lightbox = document.querySelector("#lightbox");
-      var lightboxWrapper = document.querySelector("#lightbox-wrapper");
-      var lightboxClose = document.querySelector("#lightbox-close");
-      var lightboxOpen = document.querySelector("#lightbox-open");
-
-      lightboxClose.addEventListener("click", function() {
-        lightbox.classList.toggle("closed");
-        lightboxWrapper.classList.toggle("closed");
-      });
-
-      lightboxOpen.addEventListener("click", function() {
-        lightbox.classList.toggle("closed");
-        lightboxWrapper.classList.toggle("closed");
-      });
-
 
     /* ==========================================================================
         Grid
        ========================================================================== */
 
-       function resizeGridItem(item){
-         grid = document.getElementsByClassName("grid")[0];
-         rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-         rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-         rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
-           item.style.gridRowEnd = "span "+rowSpan;
-       }
 
-       function resizeAllGridItems(){
-         allItems = document.getElementsByClassName("item");
-         for(x=0;x<allItems.length;x++){
-           resizeGridItem(allItems[x]);
-         }
-       }
+       var elem = document.querySelector('.grid');
+       var msnry = new Masonry( elem, {
 
-       function resizeInstance(instance){
-           item = instance.elements[0];
-         resizeGridItem(item);
-       }
+       });
 
-       window.onload = resizeAllGridItems();
-       window.addEventListener("resize", resizeAllGridItems);
+       // element argument can be a selector string
+       //   for an individual element
+       var msnry = new Masonry( '.grid', {
+         // options
+       });
 
-       allItems = document.getElementsByClassName("item");
-       for(x=0;x<allItems.length;x++){
-         imagesLoaded( allItems[x], resizeInstance);
-       }
-
-
-       
+       imagesLoaded( grid ).on( 'progress', function() {
+         // layout Masonry after each image loads
+         msnry.layout();
+       });
