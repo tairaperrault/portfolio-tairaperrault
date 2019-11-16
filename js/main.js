@@ -25,6 +25,7 @@
          gHeight = 0, // Initial height of our masonry
          i; // Loop counter
 
+
      // Calculate the net height of all the cells in the masonry
      for(i=0; i<gcLength; ++i) {
        gHeight+=gc[i].offsetHeight+parseInt(gridGutter);
@@ -36,9 +37,13 @@
       */
      if(window.screen.width >= 1024) {
        g.style.height = gHeight/dGridCol + gHeight/(gcLength+1) + "px";
-     } else if(window.screen.width < 1024 && window.screen.width >= 768) {
+     }
+
+     else if(window.screen.width < 1024 && window.screen.width >= 768) {
        g.style.height = gHeight/tGridCol + gHeight/(gcLength+1) + "px";
-     } else {
+     }
+
+     else {
        g.style.height = gHeight/mGridCol + gHeight/(gcLength+1) + "px";
      }
    }
@@ -62,6 +67,7 @@
          masonry(".masonry", ".grid-item", 8, 3, 2, 1);
        });
    });
+})
 
    /**
 * Preload and reform the masonry
