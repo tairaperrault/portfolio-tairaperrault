@@ -1229,263 +1229,180 @@ nav a:hover {
 
 
 
-   /* ==========================================================================
-      Grid
-      ========================================================================== */
+         /* ==========================================================================
+            Grid
+            ========================================================================== */
 
 
 
-    @media (min-width: 1200px) {
+          @media (min-width: 1200px) {
 
-      .masonry { /* Masonry container */
-        margin: 2% 1% 0 2%;
-        column-count: 3;
-        column-gap: 2%;
+            .masonry { /* Masonry container */
+              margin: 2% 1% 0 2%;
+              column-count: 3;
+              column-gap: 2%;
 
-      }
+            }
 
-      .grid-item { /* Masonry bricks or child elements */
-        display: inline-block;
-        margin-bottom: 5%;
-        width: 100%;
-      }
+            .grid-item { /* Masonry bricks or child elements */
+              display: inline-block;
+              margin-bottom: 5%;
+              width: 100%;
+            }
 
-    }
-
-
-    @media (max-width: 1200px) {
-
-      .masonry { /* Masonry container */
-        margin: 2% 1% 0 2%;
-        column-count: 2;
-        column-gap: 2%;
-      }
-
-      .grid-item { /* Masonry bricks or child elements */
-        display: inline-block;
-        margin-bottom: 4%;
-        width: 100%;
-      }
-}
+          }
 
 
+          @media (max-width: 1200px) {
 
-      @media (max-width: 600px) {
+            .masonry { /* Masonry container */
+              margin: 2% 1% 0 2%;
+              column-count: 2;
+              column-gap: 2%;
+            }
 
-        .masonry { /* Masonry container */
-          margin: 2% 1% 0 2%;
-          column-count: 1;
-        }
-
-        .grid-item { /* Masonry bricks or child elements */
-          display: inline-block;
-        margin-bottom: 5%;
-          width: 100%;
-        }
-
-      }
-
-    /* ==========================================================================
-        Lightbox
-        ========================================================================== */
-         /* Styles the thumbnail */
-
-
-
-
-      /*@media (min-width: 1200px) {
-        .lightbox  {
-          line-height: 0;
-          -webkit-column-count: 4;
-          -webkit-column-gap:   0px;
-          -moz-column-count:    4;
-          -moz-column-gap:      0px;
-          column-count:         4;
-          column-gap:           0px;
-      }
-    }
-
-
-
-      @media (max-width: 1200px) {
-        .lightbox {
-        -moz-column-count:    3;
-        -webkit-column-count: 3;
-        column-count:         3;
-        }
+            .grid-item { /* Masonry bricks or child elements */
+              display: inline-block;
+              margin-bottom: 4%;
+              width: 100%;
+            }
       }
 
 
-  @media (max-width: 850px) {
-    .lightbox {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
-    }
-  }
 
-  @media (max-width: 600px) {
-    .lightbox {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-    }
-  }*/
+            @media (max-width: 600px) {
 
+              .masonry { /* Masonry container */
+                margin: 2% 1% 0 2%;
+                column-count: 1;
+              }
 
-      /* @media (min-width: 1400px) {
-        .lightbox img {
-        height: 399px;
-        width: 399px;
-      }
-    }
+              .grid-item { /* Masonry bricks or child elements */
+                display: inline-block;
+              margin-bottom: 5%;
+                width: 100%;
+              }
 
-    @media (max-width: 1400px) {
-      .lightbox img {
-      height: 299px;
-      width: 299px;
-    }
-  }
-
-  @media (max-width: 1150px) {
-    .lightbox img {
-    height: 225px;
-    width: 225px;
-  }
-}
-
-@media (max-width: 850px) {
-  .lightbox img {
-  height: 175px;
-  width: 175px;
-}
-}
-
-  @media (max-width: 600px) {
-    .lightbox img {
-    height: 399px;
-    width: 399px;
-  }
-}*/
+            }
 
 
-      /* Styles the lightbox, removes it from sight and adds the fade-in transition */
+        /* Styles the lightbox, removes it from sight and adds the fade-in transition */
 
-      .lightbox-target {
-      position: fixed;
-      top: -100%;
-      width: 100%;
-      background: rgba(0,0,0,.9);
-      width: 100%;
-      opacity: 0;
-      -webkit-transition: opacity .5s ease-in-out;
-      -moz-transition: opacity .5s ease-in-out;
-      -o-transition: opacity .5s ease-in-out;
-      transition: opacity .5s ease-in-out;
-      overflow: hidden;
-      z-index: 2300;
-      }
+            .lightbox-target {
+            position: fixed;
+            top: -100%;
+            width: 100%;
+            background: rgba(0,0,0,.9);
+            width: 100%;
+            opacity: 0;
+            -webkit-transition: opacity .5s ease-in-out;
+            -moz-transition: opacity .5s ease-in-out;
+            -o-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+            overflow: hidden;
+            z-index: 2300;
+            }
 
-      /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+            /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
 
-      .lightbox-target img {
-      margin: auto;
-      position: absolute;
-      top: 0;
-      left:0;
-      right:0;
-      bottom: 0;
-      max-height: 0%;
-      max-width: 0%;
-      box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-      box-sizing: border-box;
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
+            .lightbox-target img {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left:0;
+            right:0;
+            bottom: 0;
+            max-height: 0%;
+            max-width: 0%;
+            box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+            box-sizing: border-box;
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
 
-      }
+            }
 
-      /* Styles the close link, adds the slide down transition */
+            /* Styles the close link, adds the slide down transition */
 
-      .closed {
-        display: none;
-      }
+            .closed {
+              display: none;
+            }
 
-      .lightbox-close {
-        position: absolute;
-        z-index: 1100;
-        right: 7%;
-        top: 9%;
-        width: 32px;
-        height: 32px;
-        cursor: pointer;
-      }
+            .lightbox-close {
+              position: absolute;
+              z-index: 1100;
+              right: 7%;
+              top: 9%;
+              width: 32px;
+              height: 32px;
+              cursor: pointer;
+            }
 
-      .leftright{
-        height: 4px;
-        width: 50px;
-        position: absolute;
-        margin-top: 24px;
-        background-color: #882052;
-        border-radius: 2px;
-        transform: rotate(45deg);
-        transition: all .3s ease-in;
-      }
+            .lightbox-leftright{
+              height: 4px;
+              width: 50px;
+              position: absolute;
+              margin-top: 24px;
+              background-color: #882052;
+              border-radius: 2px;
+              transform: rotate(45deg);
+              transition: all .3s ease-in;
+            }
 
-      .rightleft{
-        height: 4px;
-        width: 50px;
-        position: absolute;
-        margin-top: 24px;
-        background-color: #882052;
-        border-radius: 2px;
-        transform: rotate(-45deg);
-        transition: all .3s ease-in;
-      }
+            .lightbox-rightleft{
+              height: 4px;
+              width: 50px;
+              position: absolute;
+              margin-top: 24px;
+              background-color: #882052;
+              border-radius: 2px;
+              transform: rotate(-45deg);
+              transition: all .3s ease-in;
+            }
 
-      .lightbox-label {
-        font-size: 16px;
-        font-weight: 400;
-        font-family: 'Raleway', Arial, sans-serif;
-        color: #ffffff;
-        text-transform: uppercase;
-        transition: all .3s ease-in;
-        opacity: 0;
-        margin: 60px 0 0 0;
-        position: absolute;
-      }
+            .lightbox-label {
+              font-size: 16px;
+              font-weight: 400;
+              font-family: 'Raleway', Arial, sans-serif;
+              color: #ffffff;
+              text-transform: uppercase;
+              transition: all .3s ease-in;
+              opacity: 0;
+              margin: 60px 0 0 0;
+              position: absolute;
+            }
 
 
-      .lightbox-close:hover .leftright{
-        transform: rotate(-45deg);
-        background-color: #54002F;
-      }
-      .lightbox-close:hover .rightleft{
-        transform: rotate(45deg);
-        background-color: #54002F;
-      }
+            .lightbox-close:hover .lightbox-leftright{
+              transform: rotate(-45deg);
+              background-color: #54002F;
+            }
+            .lightbox-close:hover .lightbox-rightleft{
+              transform: rotate(45deg);
+              background-color: #54002F;
+            }
 
-      .lightbox-close:hover label{
-        opacity: 1;
-      }
+            .lightbox-close:hover label{
+              opacity: 1;
+            }
 
-      /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+            /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
 
-      .lightbox-target:target {
-      opacity: 1;
-      top: 0;
-      bottom: 0;
-      }
+            .lightbox-target:target {
+            opacity: 1;
+            top: 0;
+            bottom: 0;
+            }
 
-      .lightbox-target:target img {
-      max-height: 100%;
-      max-width: 100%;
-      }
+            .lightbox-target:target img {
+            max-height: 100%;
+            max-width: 100%;
+            }
 
-      .lightbox-target:target a.lightbox-close {
-      top: 0px;
-      }
+            .lightbox-target:target a.lightbox-close {
+            top: 0px;
+            }
 
 /* ==========================================================================
    Previous and Next
@@ -1861,7 +1778,7 @@ nav a:hover {
           width: 100%;
           height: 100%;
           background-color: #882052;
-          z-index: 1200;
+          z-index: 9200;
         }
 
         .hamburger {
@@ -1877,7 +1794,7 @@ nav a:hover {
 
           min-height: 600px;
 
-          z-index: 1300;
+          z-index: 9300;
         }
 
         .closed {
